@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="html()">HTML</button>
+    <button onclick="te()">Text</button>
+    <button onclick="con()">content</button>
+    <div id="html">text</div>
+    <div id="text">html</div>
+    <script>
+        //inner-text:Khi bạn sử dụng innerText để thiết lập nội dung, nó sẽ loại bỏ các thẻ HTML và
+        //chỉ hiển thị văn bản thuần túy.
+        //text-content:Trả về hoặc thiết lập toàn bộ văn bản của một phần tử, bao gồm cả văn bản được ẩn bằng CSS. 
+        //Nó giữ nguyên cấu trúc văn bản, không xử lý các thẻ HTML.
+        //innerHTML: Trả về hoặc thiết lập nội dung của một phần tử dưới dạng HTML. Nó cho phép bạn thêm hoặc thay đổi cả cấu trúc HTML và
+        //nội dung văn bản của phần tử.
+        function html(){
+            let a=document.getElementById('html').innerHTML;
+            console.log(a);
+        }
+        function te(){
+            let b=document.getElementById('text').innerText;
+            console.log(b);
+        }
+    </script>
+</body>
+</html>

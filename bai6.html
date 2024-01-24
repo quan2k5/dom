@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"id="cin">
+    <button id="add">ADD</button>
+    <ul id="list"></ul>
+    <script>
+        var add=document.getElementById('add');
+        var cin=document.getElementById('cin');
+        let a = document.createElement("li");
+        add.addEventListener("click",function(){
+            a.innerHTML=cin.value;
+            document.getElementById('list').appendChild(a);
+        });
+    </script>
+</body>
+</html>

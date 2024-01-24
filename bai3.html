@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="tex">this text is optional</h3>
+    <button id="enter">nhan vao day</button>
+    <script>
+        var temp=document.getElementById('tex');
+        var a=document.getElementById('enter');
+        a.addEventListener("click",function(){
+            temp.innerHTML='text after the change';
+        });
+    </script>
+</body>
+</html>

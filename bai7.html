@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="table" border="1">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+    <button onclick="add()">add now</button>
+    <script>
+        function add() {
+            let table = document.getElementById("table");
+            let row = table.insertRow(1);
+            let a1 = row.insertCell(0);
+            let a2 = row.insertCell(1);
+            let a3 = row.insertCell(2);
+            a1.innerHTML = "1";
+            a2.innerHTML = "2";
+            a3.innerHTML = "3";
+        }
+    </script>
+</body>
+</html>
